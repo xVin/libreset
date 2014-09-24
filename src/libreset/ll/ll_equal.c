@@ -9,7 +9,7 @@ ll_equal(
         return 1;
     }
 
-    if ((lla == NULL && llb != NULL) || (lla != NULL && llb == NULL)) {
+    if ((lla == NULL) ^ (llb == NULL)) {
         return 1;
     }
 
