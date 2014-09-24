@@ -5,8 +5,11 @@ ll_equal(
     struct ll const* lla,
     struct ll const* llb
 ) {
-    if (lla == llb ||
-        (lla == NULL && llb != NULL) || (lla != NULL && llb == NULL)) {
+    if (lla == llb) {
+        return 1;
+    }
+
+    if ((lla == NULL && llb != NULL) || (lla != NULL && llb == NULL)) {
         return 1;
     }
 
