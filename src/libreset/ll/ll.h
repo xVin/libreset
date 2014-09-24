@@ -167,6 +167,21 @@ __nonnull__(1)
     for (struct ll_element* it = (ll)->head; it; it = it->next)
 
 /**
+ * Check whether two linked list objects are equal
+ *
+ * @memberof ll
+ *
+ * @return 1 if the lists are equal, else 0 (zero)
+ */
+int
+ll_equal(
+    struct ll const* lla, //!< The first linked list to compare
+    struct ll const* llb //!< The second linked list to compare
+)
+__nonnull__(1, 2)
+;
+
+/**
  * @}
  */
 
