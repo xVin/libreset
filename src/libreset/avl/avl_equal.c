@@ -17,8 +17,10 @@ avl_equal(
     struct avl const* avla,
     struct avl const* avlb
 ) {
-    if (avla == avlb ||
-        (avla == NULL && avlb != NULL) || (avla != NULL && avlb == NULL)) {
+    if (avla == avlb) {
+        return 1;
+    }
+    if ((avla == NULL && avlb != NULL) || (avla != NULL && avlb == NULL)) {
         return 0;
     }
 
