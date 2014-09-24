@@ -20,7 +20,7 @@ avl_equal(
     if (avla == avlb) {
         return 1;
     }
-    if ((avla == NULL && avlb != NULL) || (avla != NULL && avlb == NULL)) {
+    if ((avla == NULL) ^ (avlb == NULL)) {
         return 0;
     }
 
