@@ -131,6 +131,21 @@ avl_find(
 );
 
 /**
+ * Check if two avl trees are equal
+ *
+ * @memberof avl
+ *
+ * @return 1 if they are equal, else 0 (zero)
+ */
+int
+avl_equal(
+    struct avl const* avla, //!< The first avl object for the comparison
+    struct avl const* avlb, //!< The second avl object for the comparison
+)
+__nonnull__(1, 2)
+;
+
+/**
  * Get the hash value of an element
  *
  * @memberof avl_el

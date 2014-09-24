@@ -107,7 +107,7 @@ r_set_equal(
         return 1;
     }
 
-    return 0;
+    return ;
 }
 
 
