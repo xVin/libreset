@@ -94,3 +94,20 @@ r_set_contains(
 ) {
     return ht_find(&set->ht, cmp, set->cfg);
 }
+
+int
+r_set_equal(
+    struct r_set const* set_a,
+    struct r_set const* set_b
+) {
+    if (set_a == set_b ||
+        (set_a == NULL && set_b != NULL) ||
+        (set_a != NULL && set_b == NULL)) {
+
+        return 1;
+    }
+
+    return 0;
+}
+
+
