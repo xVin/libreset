@@ -140,6 +140,21 @@ ht_ndel(
 );
 
 /**
+ * Check if two hashtable objects are equal (containing equal elements)
+ *
+ * @memberof ht
+ *
+ * @return 1 if the hashtables are equal, else 0 (zero)
+ */
+int
+ht_equal(
+    struct ht* a, //!< The first hashtable for the comparison
+    struct ht* b //!< The second hashtable for the comparison
+)
+__nonnull__(1, 2)
+;
+
+/**
  * Helper to calculate the actual bucket count of the hashtable
  *
  * @memberof ht
