@@ -19,7 +19,7 @@ avl_equal(
 ) {
     if (avla == avlb ||
         (avla == NULL && avlb != NULL) || (avla != NULL && avlb == NULL)) {
-        return 1;
+        return 0;
     }
 
     return subtree_equal(avla->root, avlb->root);
